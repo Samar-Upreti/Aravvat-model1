@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #0B0F19; 
+    color: #ffffff; 
+    overflow-x: hidden; 
+}
+
+.glass-nav { 
+    background: rgba(11, 15, 25, 0.8); 
+    backdrop-filter: blur(12px); 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+.glass-card { 
+    background: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.text-gradient { 
+    background: linear-gradient(to right, #FBBF24, #F59E0B); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Custom Keyframe Animations */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-blob { animation: blob 7s infinite; }
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
